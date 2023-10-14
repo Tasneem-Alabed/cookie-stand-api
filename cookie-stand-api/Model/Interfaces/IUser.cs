@@ -6,7 +6,7 @@ namespace cookie_stand_api.Model.Interfaces
 {
     public interface IUser
     {
-        public Task<UserDTO> SignUp(RegisterDTO registerDTO,ModelStateDictionary modelState, ClaimsPrincipal claims);
+        public Task<UserDTO> SignUp(RegisterDTO registerDTO,ModelStateDictionary modelState, ClaimsPrincipal claims );
 
         public Task<UserDTO> SignIn(string username,string password,ModelStateDictionary modelState);
 

@@ -13,8 +13,7 @@ namespace cookie_stand_api.Controllers
     public class CookieStandController : ControllerBase
     {
         private readonly ICookieStand _cookie;
-
-        public CookieStandController(ICookieStand cookieStand)
+                public CookieStandController(ICookieStand cookieStand)
         {
              _cookie = cookieStand;
         }

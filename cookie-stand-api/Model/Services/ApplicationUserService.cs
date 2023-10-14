@@ -14,7 +14,7 @@ namespace cookie_stand_api.Model.Services
 
         private readonly JWTTokenService _jwtTokenService;
 
-        public ApplicationUserService(UserManager<ApplicationUser> userManager, JWTTokenService jwtTokenService)
+        public ApplicationUserService(UserManager<ApplicationUser> userManager, JWTTokenService jwtTokenService )
         {
             _userManager = userManager;
             _jwtTokenService = jwtTokenService;

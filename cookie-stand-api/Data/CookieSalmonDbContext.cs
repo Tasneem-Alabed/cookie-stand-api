@@ -30,9 +30,7 @@ namespace cookie_stand_api.Data
             new IdentityUserRole<string> { UserId ="1" , RoleId = "admin manager" },
             new IdentityUserRole<string> { UserId = "2", RoleId = "hotel manager" } ,
             new IdentityUserRole<string> { UserId = "3", RoleId = "trip manager" } ,
-            new IdentityUserRole<string> { UserId = "4", RoleId = "user" }
-
-    };
+            new IdentityUserRole<string> { UserId = "4", RoleId = "user" }    };
             SeedRole(modelBuilder, "Admin", "Create","Read","Update","Delete");
             SeedRole(modelBuilder, "User", "Read");
         }

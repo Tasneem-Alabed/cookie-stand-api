@@ -2,7 +2,7 @@
 {
     public class CookieStandPostDTO
     {
-        public required string Location { get; set; }
+        public required string Location { get; set;}
 
         public string? Description { get; set; }
 
