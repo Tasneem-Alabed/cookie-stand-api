@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CookieStand" Category="EntityType" Annotations="Relational:TableName: CookieStands RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" BaseClass="" Bounds="20,227.88,348.993333333333,309.8" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="CookieStand" Name="CookieStand" />
+    <Node Id="CookieStand.Average_Cookies_Per_Sale" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="40,379.8,205.863333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Average_Cookies_Per_Sale (double)" MaxLength="None" Name="Average_Cookies_Per_Sale" PropertyAccessMode="PropertyAccessMode.Default" Type="double" ValueGenerated="None" />
+    <Node Id="CookieStand.Description" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="175.746666666667,323.84,120.876666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Description (string)" MaxLength="None" Name="Description" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="CookieStand.HourlySales" Category="Navigation Collection" Bounds="251.48,267.88,97.5133333333333,25.96" Dependent="HourlySales" Field="" Inverse="" Label="HourlySales (*)" Name="HourlySales" Principal="" PropertyAccessMode="PropertyAccessMode.Default" Type="List&lt;HourlySales&gt;" />
+    <Node Id="CookieStand.ID" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="40,267.88,55.8966666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="ID (int)" MaxLength="None" Name="ID" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="ValueGenerated.OnAdd" />
+    <Node Id="CookieStand.Location" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="40,323.84,105.746666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Location (string)" MaxLength="None" Name="Location" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="CookieStand.Maximum_Customers_Per_Hour" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="40,491.72,211.52,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Maximum_Customers_Per_Hour (int)" MaxLength="None" Name="Maximum_Customers_Per_Hour" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="CookieStand.Minimum_Customers_Per_Hour" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="40,435.76,209.603333333333,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="Minimum_Customers_Per_Hour (int)" MaxLength="None" Name="Minimum_Customers_Per_Hour" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="CookieStand.Owner" Category="Property Optional" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="125.896666666667,267.88,95.5833333333334,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="False" IsShadow="False" IsUnicode="True" Label="Owner (string)" MaxLength="None" Name="Owner" PropertyAccessMode="PropertyAccessMode.Default" Type="string" ValueGenerated="None" />
+    <Node Id="HourlySales" Category="EntityType" Annotations="" BaseClass="" Bounds="80.9583333333333,40,227.076666666667,141.92" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" IsAbstract="False" Label="HourlySales" Name="HourlySales" />
+    <Node Id="HourlySales.CookieStandID" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="100.958333333333,135.96,122.55,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="True" IsIndexed="True" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="CookieStandID (int)" MaxLength="None" Name="CookieStandID" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="HourlySales.HourlySale" Category="Property Required" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="186.855,80,101.18,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="False" IsRequired="True" IsShadow="False" IsUnicode="True" Label="HourlySale (int)" MaxLength="None" Name="HourlySale" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="HourlySales.ID" Category="Property Primary" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" BeforeSaveBehavior="PropertySaveBehavior.Save" Bounds="100.958333333333,80,55.8966666666667,25.96" Field="" IsAlternateKey="False" IsConcurrencyToken="False" IsForeignKey="False" IsIndexed="False" IsPrimaryKey="True" IsRequired="True" IsShadow="False" IsUnicode="True" Label="ID (int)" MaxLength="None" Name="ID" PropertyAccessMode="PropertyAccessMode.Default" Type="int" ValueGenerated="None" />
+    <Node Id="IModel" Category="Model" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]] Relational:MaxIdentifierLength: 128 RelationshipDiscoveryConvention:InverseNavigationCandidates: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]] SqlServer:ValueGenerationStrategy: IdentityColumn" Bounds="0,0,388.993333333333,557.68" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" Group="Expanded" Label="CookieSalmonDbContext" ProductVersion="7.0.11" PropertyAccessMode="PropertyAccessMode.Default" />
+  </Nodes>
+  <Links>
+    <Link Source="CookieStand" Target="CookieStand.Average_Cookies_Per_Sale" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.Description" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.HourlySales" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.ID" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.Location" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.Maximum_Customers_Per_Hour" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.Minimum_Customers_Per_Hour" Category="Contains" />
+    <Link Source="CookieStand" Target="CookieStand.Owner" Category="Contains" />
+    <Link Source="HourlySales" Target="CookieStand" Category="Foreign Key" Annotations="" Bounds="194.496673583984,181.919998168945,0,36.9600067138672" From="HourlySales.CookieStandID" IsUnique="False" Label="1:*" LabelBounds="180.423333333333,196.92,14.0733333333333,15.96" Name="HourlySales -&gt; CookieStand" To="CookieStand.ID" />
+    <Link Source="HourlySales" Target="HourlySales.CookieStandID" Category="Contains" />
+    <Link Source="HourlySales" Target="HourlySales.HourlySale" Category="Contains" />
+    <Link Source="HourlySales" Target="HourlySales.ID" Category="Contains" />
+    <Link Source="IModel" Target="CookieStand" Category="Contains" />
+    <Link Source="IModel" Target="HourlySales" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="EntityType" />
+    <Category Id="Foreign Key" />
+    <Category Id="Model" />
+    <Category Id="Navigation Collection" />
+    <Category Id="Property Optional" />
+    <Category Id="Property Primary" />
+    <Category Id="Property Required" />
+  </Categories>
+  <Properties>
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass" Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Field" Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsAbstract" Label="IsAbstract" Description="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="MaxLength" DataType="System.String" />
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type" Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
