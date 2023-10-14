@@ -14,8 +14,7 @@ namespace cookie_stand_api.Controllers
         private readonly IUser _user;
 
         private readonly UserManager<ApplicationUser> _userManager;
-
-        public UserController(IUser user, UserManager<ApplicationUser> userMaanger)
+                public UserController(IUser user, UserManager<ApplicationUser> userMaanger)
         {
             _user = user;
             _userManager = userMaanger;

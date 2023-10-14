@@ -10,16 +10,12 @@ namespace cookie_stand_api.Model.Services
     {
         private readonly CookieSalmonDbContext _context;
 
-        public CookieStandService(CookieSalmonDbContext cookieSalmonDbContext)
+        public CookieStandService(CookieSalmonDbContext cookieSalmonDbContext )
         {
             _context = cookieSalmonDbContext;
         }
 
-        /// <summary>
-        /// Create a cookie stand and calculate the hourly state depend on the data you provide
-        /// </summary>
-        /// <param name="cookieStandDTO"></param>
-        /// <returns></returns>
+        
         public async Task<CookieStand> AddCookieStand(CookieStandPostDTO cookieStandDTO)
         {
             CookieStand cookieStandToAdd = new CookieStand
@@ -41,16 +37,7 @@ namespace cookie_stand_api.Model.Services
             return cookieStandToAdd;
         }
 
-        // function to calculate the Hourly sales
-        /// <summary>
-        /// This action calculate the hourly sales depend on the customers
-        /// number and the average of the cookies sales 
-        /// </summary>
-        /// <param name="CookieStandID"></param>
-        /// <param name="Minimum_Customers_Per_Hour"></param>
-        /// <param name="Maximum_Customers_Per_Hour"></param>
-        /// <param name="Average_Cookies_Per_Sale"></param>
-        /// <returns></returns>
+        
         public async Task<List<HourlySales>> GenerateHourlySales(int CookieStandID, int Minimum_Customers_Per_Hour,
             int Maximum_Customers_Per_Hour, double Average_Cookies_Per_Sale)
         {
@@ -78,11 +65,7 @@ namespace cookie_stand_api.Model.Services
             return hourlySalesList;
         }
 
-        /// <summary>
-        /// Delete an Cookie stand and the all hourly sales are associated to it 
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+       
         public async Task DeleteCookieStand(int id)
         {
             var cookieStand = await _context.CookieStands.FindAsync(id);
@@ -103,10 +86,6 @@ namespace cookie_stand_api.Model.Services
 
         }
 
-        /// <summary>
-        /// get the all cookie stands data with all hourly sales as a value
-        /// </summary>
-        /// <returns></returns>
         public async Task<List<CookieStandDTO>> GetAllCookieStands()
         {
             return await _context.CookieStands.Select(cookieStand => new CookieStandDTO
@@ -122,12 +101,8 @@ namespace cookie_stand_api.Model.Services
             }).ToListAsync();
         }
 
-        /// <summary>
-        /// get a specific cookie data 
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        /// <exception cref="NotImplementedException"></exception>
+        
+       
         public async Task<CookieStandDTO> GetCookieStandById(int id)
         {
             var cookieStand =  await _context.CookieStands.Select(cookieStand => new CookieStandDTO

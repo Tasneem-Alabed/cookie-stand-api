@@ -10,7 +10,7 @@ namespace cookie_stand_api.Model.Interfaces
 
         public Task<CookieStandDTO> GetCookieStandById(int id);
 
-        public Task<CookieStand> UpdateCookieStand(int id, CookieStandPostDTO cookieStandDTO);
+        public Task<CookieStand> UpdateCookieStand(int id, CookieStandPostDTO cookieStandDTO );
 
         public Task DeleteCookieStand(int id);
 

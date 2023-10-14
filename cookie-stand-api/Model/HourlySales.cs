@@ -4,7 +4,7 @@ namespace cookie_stand_api.Model
 {
     public class HourlySales
     {
-        public int ID { get; set; }
+        public int ID { get; set;  }
 
         public int CookieStandID { get; set; }
 
